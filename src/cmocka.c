@@ -1943,17 +1943,11 @@ static void cmprintf_group_finish_xml(const char *group_name,
         char buf[1024];
         snprintf(buf, sizeof(buf), "%s", env);
 
-        fp = fopen(buf, "r");
+        fp = fopen(buf, "a");
         if (fp == NULL) {
-            fp = fopen(buf, "w");
-            if (fp != NULL) {
-                file_opened = 1;
-            } else {
-                fp = stderr;
-            }
-        } else {
-            fclose(fp);
             fp = stderr;
+        } else {
+            file_opened = 1;
         }
     }
 

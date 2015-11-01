@@ -1,3 +1,30 @@
+CMOCKA with add-ons
+===============
+
+What is this?
+--------
+This is a clone of the original cmocka (https://cmocka.org/). This was cloned from
+(git://git.cryptomilk.org/projects/cmocka.git).
+
+Why?
+---
+I needed some small changes/features over on top of the cmocka framework & so
+this forked version. JFYI, It all started with appending the XML file with output
+instead of dumping to the stderr if Xl file found.
+Hopefully I will be able to add more features to this fork.
+
+What next?
+-----
+If all things go well then hopefully I can request for a merge back to the master, i.e.,
+(git://git.cryptomilk.org/projects/cmocka.git). Let us see.
+
+ChangeLogs
+----
+* Instead of dumping to stderr, appending to the XML file if available.
+
+
+*****
+
 CMOCKA
 =======
 
